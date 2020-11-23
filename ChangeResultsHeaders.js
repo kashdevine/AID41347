@@ -55,11 +55,14 @@ window.onload = function (){
 };
 
 window.addEventListener("DOMContentLoaded",function (){
-    const headerLocation = document.querySelector("#idx-results-header > h2").textContent;
+    const headerLocation = document.querySelector("#idx-results-header > h2");
     const stringRelacement = "Palm Beach Condos";
     const oldString = "Palm Beach";
 
-    headerLocation.replace(oldString, stringRelacement);
+    /**
+     * Note that textContent.replace returns a string, so it needs to be set to the textContent node.
+     */
+    headerLocation.textContent = headerLocation.textContent.replace(oldString, stringRelacement);
 });
 
 window.addEventListener("load",function (){
