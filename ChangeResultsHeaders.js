@@ -90,6 +90,11 @@ idx("#idx-results-header > h2").text(function () {
 
 
 
+
+
+
+
+// The following is for a different request for the client.
 window.addEventListener("load",function (){
 let photos = document.querySelectorAll(".idx-listing__photo");
 photos.forEach(e =>{
